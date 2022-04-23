@@ -1,0 +1,14 @@
+{
+  "name": "nullstack-chrome-extension",
+  "version": "0.0.1",
+  "description": "",
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "nullstack": "~0.15.0"
+  },
+  "scripts": {
+    "start": "npx nullstack start",
+    "build": "npx nullstack build --mode=spa --output=extension"
+  }
+}
