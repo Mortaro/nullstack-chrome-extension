@@ -36,6 +36,7 @@ Load the extension folder as an unpacked extension
 
 - public/manifest.json creates the extension manifest
 - .env adds `NULLSTACK_WORKER_API` to connect the extension with the server
+- server.js disables the default service worker
 - src/Application.nts is the entry component
 - src/Popup.nts has the extension popup code
 
