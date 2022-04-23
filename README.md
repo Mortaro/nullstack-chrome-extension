@@ -39,7 +39,7 @@ Load the extension folder as an unpacked extension
 - server.js disables the default service worker
 - src/Application.nts is the entry component
 - src/Popup.nts has the extension popup code
-- src/application.css defines the popup window size
+- src/Application.css defines the popup window size
 
 ## Learn more about Nullstack
 
