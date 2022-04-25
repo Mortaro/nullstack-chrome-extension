@@ -1,6 +1,10 @@
 import Nullstack, { NullstackClientContext, NullstackServerContext } from 'nullstack';
 
-class Popup extends Nullstack {
+interface PopupProps {
+  route?: string
+}
+
+class Popup extends Nullstack<PopupProps> {
 
   alive = false
 

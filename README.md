@@ -26,11 +26,11 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 ## Run the extension:
 
-`npm run build && npm start`
+`npm start`
 
 Load the extension folder as an unpacked extension
 
-(this is quite annoying and should be automated)
+Extension will have autoreload as you make updates
 
 ## Relevant files
 
@@ -40,6 +40,7 @@ Load the extension folder as an unpacked extension
 - src/Application.nts is the entry component
 - src/Popup.nts has the extension popup code
 - src/Application.css defines the popup window size
+- package.json sets mode and output
 
 ## Learn more about Nullstack
 

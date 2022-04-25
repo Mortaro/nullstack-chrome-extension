@@ -1,6 +1,6 @@
 import Nullstack, { NullstackClientContext } from 'nullstack';
-import './Application.css';
 import Popup from './Popup';
+import './Application.css';
 
 class Application extends Nullstack {
 
@@ -13,7 +13,7 @@ class Application extends Nullstack {
   render() {
     return (
       <main>
-        <Popup />
+        <Popup route="*" />
       </main>
     )
   }
