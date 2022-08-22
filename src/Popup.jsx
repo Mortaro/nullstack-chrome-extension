@@ -1,14 +1,10 @@
-import Nullstack, { NullstackClientContext, NullstackServerContext } from 'nullstack';
+import Nullstack from 'nullstack';
 
-interface PopupProps {
-  route?: string
-}
-
-class Popup extends Nullstack<PopupProps> {
+class Popup extends Nullstack {
 
   alive = false
 
-  static async serverFunction({ environment }: NullstackServerContext): Promise<boolean> {
+  static async serverFunction({ environment }) {
     const alive = environment.server
     console.log({ alive })
     return alive
@@ -20,7 +16,7 @@ class Popup extends Nullstack<PopupProps> {
       return
     }
 
-    const alive = await Popup.serverFunction({})
+    const alive = await this.serverFunction()
 
     const ping = (alive) => {
       console.log({ alive })
@@ -42,7 +38,7 @@ class Popup extends Nullstack<PopupProps> {
     }, pong);
   }
 
-  render({ project }: NullstackClientContext) {
+  render({ project }) {
     return (
       <section>
         <h1> ${project.name} </h1>

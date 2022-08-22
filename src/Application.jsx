@@ -1,10 +1,10 @@
-import Nullstack, { NullstackClientContext } from 'nullstack';
+import Nullstack from 'nullstack';
 import Popup from './Popup';
 import './Application.css';
 
 class Application extends Nullstack {
 
-  prepare({ page, project }: NullstackClientContext) {
+  prepare({ page, project }) {
     page.locale = 'en-US';
     page.title = `${project.name} - Welcome to Nullstack!`;
     page.description = `${project.name} was made with Nullstack`;

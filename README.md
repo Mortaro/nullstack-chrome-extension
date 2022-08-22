@@ -37,15 +37,11 @@ Extension will have autoreload as you make updates
 - public/manifest.json creates the extension manifest
 - .env adds `NULLSTACK_WORKER_API` to connect the extension with the server
 - server.js disables the default service worker
-- src/Application.nts is the entry component
-- src/Popup.nts has the extension popup code
+- src/Application.jsx is the entry component
+- src/Popup.jsx has the extension popup code
 - src/Application.css defines the popup window size
-- package.json sets mode and output
+- package.json sets mode to spa (default mode) and enables writing files to disk
 
 ## Learn more about Nullstack
 
 [Read the documentation](https://nullstack.app/documentation)
-
-## Disclaimer
-
-This was not made at all to convince @brunolm to test Nullstack
